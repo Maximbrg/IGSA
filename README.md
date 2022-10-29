@@ -12,4 +12,4 @@ Run Instructions:
 - algorithm:: 0 - IGSA, 1 - A* Semantic
 - path:: the path to the project directory
 
-3. run the main.py file
+3. Run the main.py file
