@@ -4,7 +4,12 @@
     "URL": "https://www.wikihow.com/install-microsoft-office-2007-on-linux",
     "MainTask": "online communication",
     "MainTaskSummary": "",
-    "Categories": ["web", "electronic"
+        "Steps": [ {
+      "Headline": "chose a user to chat with him"
+    }
+
+    ],
+    "Categories": ["web"
     ],
     "Views": 41321,
     "AuthorsCount": 14

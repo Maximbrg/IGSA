@@ -79,7 +79,7 @@ def run():
         vectors.create_vectors(settings['exp_path'] + 'vectors.pickle')
 
     _, _, _, _, _, _, _ = \
-        run_experiment(maps, vectors, levels=['multipath'], domain=settings['domain'], verbose=settings['algorithm'])
+        run_experiment(maps, vectors, levels=['simple'], domain=settings['domain'], verbose=settings['algorithm'])
 
 
 if __name__ == '__main__':

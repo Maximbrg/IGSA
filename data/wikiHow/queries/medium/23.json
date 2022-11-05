@@ -2,10 +2,16 @@
   {
     "Time": 1576560960525,
     "URL": "https://www.wikihow.com/install-microsoft-office-2007-on-linux",
-    "MainTask": "How to find a job",
     "MainTaskSummary": "",
-    "Categories": [
-    "search"
+    "MainTask": "become a seller",
+   "Parts": [{
+      "PartName": "start as soon as possible",
+      "steps": [{
+        "Headline": "break problems into smaller steps"
+      }]
+
+    }
+
     ],
     "Views": 41321,
     "AuthorsCount": 14

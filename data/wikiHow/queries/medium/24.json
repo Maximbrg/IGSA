@@ -2,10 +2,16 @@
   {
     "Time": 1576560960525,
     "URL": "https://www.wikihow.com/install-microsoft-office-2007-on-linux",
-    "MainTask": "oven disposal",
     "MainTaskSummary": "",
-    "Categories": [
-    "home"
+    "MainTask": "get Hex code of a color",
+   "Parts": [{
+      "PartName": "Using GIMP or Similar Image Software ",
+      "steps": [{
+        "Headline": "download it"
+      }]
+
+    }
+
     ],
     "Views": 41321,
     "AuthorsCount": 14

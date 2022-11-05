@@ -19,58 +19,57 @@ class wiki_how:
             self.add_vertex(data['MainTask'], 'MainTask', id)
             id -= 1
 
+        if 'Parts' in data.keys():
+            for part in data['Parts']:
+                self.add_vertex(part['PartName'], 'parts', id)
+                self.addEdge(part['PartName'], data['MainTask'], 'non', twoSide=True)
+                id -= 1
+
+                for step in part['steps']:
+                    self.add_vertex(step['Headline'], 'step', id)
+                    self.addEdge(part['PartName'], step['Headline'], 'non', twoSide=True)
+                    id -= 1
+
+        if 'Methods' in data.keys():
+            for part in data['Methods']:
+                self.add_vertex(part['MethodName'], 'methods', id)
+                self.addEdge(part['MethodName'], data['MainTask'], 'non', twoSide=True)
+                id -= 1
+
+                for step in part['Steps']:
+                    self.add_vertex(step['Headline'], 'step', id)
+                    self.addEdge(part['MethodName'], step['Headline'], 'non', twoSide=True)
+                    id -= 1
+
         if 'Steps' in data.keys():
-            self.add_vertex('Steps', 'Steps', id)
-            if main_task:
-                self.addEdge('Steps', data['MainTask'], 'non', twoSide=True)
-            id -= 1
             for step in data['Steps']:
                 self.add_vertex(step['Headline'], 'step', id)
-                self.addEdge('Steps', step['Headline'], 'non', twoSide=True)
+                self.addEdge(data['MainTask'], step['Headline'], 'non', twoSide=True)
                 id -= 1
 
         if 'Categories' in data.keys():
-            self.add_vertex('Categories', 'Categories', id)
-            if main_task:
-                self.addEdge('Categories', data['MainTask'], 'non', twoSide=True)
-            id -= 1
-
             for step in data['Categories']:
                 self.add_vertex(step, 'category', id)
-                self.addEdge('Categories', step, 'non', twoSide=True)
+
+                self.addEdge(data['MainTask'], step, 'non', twoSide=True)
                 id -= 1
 
         if 'Ingredients' in data.keys():
-            self.add_vertex('Ingredients', 'Ingredients', id)
-            if main_task:
-                self.addEdge('Ingredients', data['MainTask'], 'non', twoSide=True)
-            id -= 1
-
             for step in data['Ingredients']:
                 self.add_vertex(step, 'Ingredient', id)
-                self.addEdge('Ingredients', step, 'non', twoSide=True)
+                self.addEdge(data['MainTask'], step, 'non', twoSide=True)
                 id -= 1
 
         if 'Requirements' in data.keys():
-            self.add_vertex('Requirements', 'Requirements', id)
-            if main_task:
-                self.addEdge('Requirements', data['MainTask'], 'non', twoSide=True)
-            id -= 1
-
             for step in data['Requirements']:
                 self.add_vertex(step, 'Requirement', id)
-                self.addEdge('Requirements', step, 'non', twoSide=True)
+                self.addEdge(data['MainTask'], step, 'non', twoSide=True)
                 id -= 1
 
         if 'Tips' in data.keys():
-            self.add_vertex('Tips', 'Tips', id)
-            if main_task:
-                self.addEdge('Tips', data['MainTask'], 'non', twoSide=True)
-            id -= 1
-
             for step in data['Tips']:
-                self.add_vertex(step, 'Tips', id)
-                self.addEdge('Tips', step, 'non', twoSide=True)
+                self.add_vertex(step, 'Tip', id)
+                self.addEdge(data['MainTask'], step, 'non', twoSide=True)
                 id -= 1
 
 
@@ -188,3 +187,4 @@ class wiki_how:
         self.inverse_vertex_info = inverse_vertex_info
         self.graph = graph2
         self.edge_info = edge_info
+

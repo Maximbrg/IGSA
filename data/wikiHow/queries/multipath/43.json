@@ -4,7 +4,12 @@
     "URL": "https://www.wikihow.com/install-microsoft-office-2007-on-linux",
     "MainTask": "construct a new computer",
     "MainTaskSummary": "",
-    "Tips": ["cooling system", "power supply"
+            "Steps": [ {
+      "Headline": "determine a budget"
+    }
+
+    ],
+    "Tips": ["cooling system"
     ],
     "Views": 41321,
     "AuthorsCount": 14

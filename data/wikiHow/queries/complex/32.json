@@ -4,10 +4,13 @@
     "URL": "https://www.wikihow.com/install-microsoft-office-2007-on-linux",
       "MainTask": "pickle peppers",
     "MainTaskSummary": "",
-    "Steps": [
+    "Steps": [ {
+      "Headline": "cut the peppers"
+    }
 
     ],
     "Views": 41321,
     "AuthorsCount": 14
   }
 ]
+

@@ -4,7 +4,9 @@
     "URL": "https://www.wikihow.com/install-microsoft-office-2007-on-linux",
       "MainTask": "prepare to medical treatment",
     "MainTaskSummary": "",
-    "Steps": [
+    "Steps": [ {
+      "Headline": "check network support"
+    }
 
     ],
     "Views": 41321,

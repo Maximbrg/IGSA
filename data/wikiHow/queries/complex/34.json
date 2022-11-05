@@ -5,7 +5,9 @@
       "MainTask": "connect wireless equipment",
     "MainTaskSummary": "",
     "Steps": [
-
+{
+      "Headline": "open start menu"
+    }
     ],
     "Views": 41321,
     "AuthorsCount": 14

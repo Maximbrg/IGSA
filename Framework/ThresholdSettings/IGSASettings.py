@@ -11,11 +11,11 @@ def getSettings():
         'k': 2,
         'th': 0.7,
         'hop': 0.8,
-        'domain': 0,
-        'createVector': False,
+        'domain': 2,
+        'createVector': True,
         'vectors': None,
         'algorithm': 0,
-        'path': 'C:\\Users\\max_b\\PycharmProjects\\igsa\\'
+        'path': 'C:\\Users\\max_b\\PycharmProjects\\IGSA_experiment\\'
 
     }
 

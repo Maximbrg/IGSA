@@ -5,7 +5,9 @@
       "MainTask": "add extra memory to a computer",
     "MainTaskSummary": "",
     "Steps": [
-
+{
+      "Headline": "open a computer"
+    }
     ],
     "Views": 41321,
     "AuthorsCount": 14

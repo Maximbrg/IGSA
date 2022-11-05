@@ -2,10 +2,16 @@
   {
     "Time": 1576560960525,
     "URL": "https://www.wikihow.com/install-microsoft-office-2007-on-linux",
-    "MainTask": "Keeping a CD player clean",
+    "MainTask": "selecting a guy",
     "MainTaskSummary": "",
-    "Categories": [
-    "Maintenance"
+   "Parts": [{
+      "PartName": "Observing Multiple Guys",
+      "steps": [{
+        "Headline": "think about having joy"
+      }]
+
+    }
+
     ],
     "Views": 41321,
     "AuthorsCount": 14

@@ -1,4 +1,4 @@
-import classDiagramEvaluetion as cde
+import main as cde
 import numpy as np
 import math
 
